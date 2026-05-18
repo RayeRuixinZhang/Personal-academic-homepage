@@ -2,37 +2,50 @@
 
 A clean, static academic homepage for public health, epidemiology, and biomedical research profiles.
 
-This repository is designed to work in two ways:
+Public site:
 
-1. As Ruixin Zhang's public academic homepage.
-2. As a reusable template for other researchers who want a lightweight personal academic website.
+https://RayeRuixinZhang.github.io/Personal-academic-homepage/
 
-No build system is required. The site is plain HTML and CSS.
+Repository:
+
+https://github.com/RayeRuixinZhang/Personal-academic-homepage
+
+This repository works in two ways:
+
+1. It hosts Ruixin Zhang's public academic homepage.
+2. It provides a reusable plain HTML/CSS template for other researchers.
+
+No build system is required.
 
 ## Project Structure
 
 ```text
 .
-├── index.html
-├── styles.css
-├── README.md
-├── TEMPLATE_GUIDE.md
-└── assets/
-    ├── headshot.png
-    └── publication-images/
-        ├── fatty-liver-index-mortality.png
-        ├── hepatitis-b-incidence-xiamen.png
-        ├── intranasal-covid-vaccine.png
-        ├── masld-global-burden.png
-        ├── notifiable-diseases-covid.png
-        └── pertussis-adults-burden.png
+|-- index.html
+|-- styles.css
+|-- README.md
+|-- TEMPLATE_GUIDE.md
+|-- PRIVATE_MATERIALS.md
+|-- assets/
+|   |-- headshot.png
+|   `-- publication-images/
+|       |-- fatty-liver-index-mortality.png
+|       |-- hepatitis-b-incidence-xiamen.png
+|       |-- intranasal-covid-vaccine.png
+|       |-- masld-global-burden.png
+|       |-- notifiable-diseases-covid.png
+|       `-- pertussis-adults-burden.png
+|-- encrypted-materials/
+|   `-- personal-materials.zip.aes
+`-- scripts/
+    `-- decrypt-personal-materials.ps1
 ```
 
 ## Local Preview
 
 Open `index.html` directly in a browser.
 
-## Customize
+## Reuse This Template
 
 Edit `index.html` to update:
 
@@ -51,16 +64,18 @@ Edit `styles.css` to update:
 - Typography
 - Responsive layout behavior
 
-See `TEMPLATE_GUIDE.md` for detailed replacement instructions.
+See `TEMPLATE_GUIDE.md` for step-by-step customization notes.
 
-## Privacy Notes
+## Private Materials
 
-Private source materials are intentionally excluded from Git tracking, including:
+The original private materials are not stored as plain files in this repository.
 
-- Original CV files
-- Original publication PDFs
-- Draft source materials
-- Files in `个人素材/`
-- Large or raw source images that are not directly used by the website
+They are stored only as an encrypted archive:
 
-Only the files needed to render the public website are intended to be tracked.
+```text
+encrypted-materials/personal-materials.zip.aes
+```
+
+See `PRIVATE_MATERIALS.md` for decryption instructions.
+
+The archive password is intentionally not written into the repository.

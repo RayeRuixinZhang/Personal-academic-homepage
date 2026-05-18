@@ -1,0 +1,14 @@
+# Private source materials
+个人素材/
+
+# Publication PDFs are not linked from the public homepage
+assets/publications/
+
+# Local publication-image source files with long names; stable web copies are tracked
+assets/publication-images/* *
+assets/publication-images/*.tif
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/

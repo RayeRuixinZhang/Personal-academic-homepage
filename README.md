@@ -1,81 +1,39 @@
-# Personal Academic Homepage
+# Ruixin Zhang Academic Homepage
 
-A clean, static academic homepage for public health, epidemiology, and biomedical research profiles.
+Static academic homepage for Ruixin Zhang.
 
-Public site:
-
-https://RayeRuixinZhang.github.io/Personal-academic-homepage/
-
-Repository:
-
-https://github.com/RayeRuixinZhang/Personal-academic-homepage
-
-This repository works in two ways:
-
-1. It hosts Ruixin Zhang's public academic homepage.
-2. It provides a reusable plain HTML/CSS template for other researchers.
-
-No build system is required.
-
-## Project Structure
+Website:
 
 ```text
-.
-|-- index.html
-|-- styles.css
-|-- README.md
-|-- TEMPLATE_GUIDE.md
-|-- PRIVATE_MATERIALS.md
-|-- assets/
-|   |-- headshot.png
-|   `-- publication-images/
-|       |-- fatty-liver-index-mortality.png
-|       |-- hepatitis-b-incidence-xiamen.png
-|       |-- intranasal-covid-vaccine.png
-|       |-- masld-global-burden.png
-|       |-- notifiable-diseases-covid.png
-|       `-- pertussis-adults-burden.png
-|-- encrypted-materials/
-|   `-- personal-materials.zip.aes
-`-- scripts/
-    `-- decrypt-personal-materials.ps1
+https://rayeruixinzhang.github.io/Personal-academic-homepage/
 ```
 
-## Local Preview
+## Files
+
+```text
+index.html                         Homepage content
+styles.css                         Page styles
+assets/headshot.png                Profile photo
+assets/publication-images/          Publication images used by the homepage
+encrypted-materials/                Password-encrypted private source archive
+scripts/decrypt-personal-materials.ps1
+PRIVATE_MATERIALS.md                Notes for the encrypted archive
+```
+
+## Preview
 
 Open `index.html` directly in a browser.
 
-## Reuse This Template
+## GitHub Pages
 
-Edit `index.html` to update:
-
-- Name and affiliation
-- Contact email
-- About section
-- Research interests
-- Publications and DOI links
-- Education
-- Honors and awards
-
-Edit `styles.css` to update:
-
-- Colors
-- Spacing
-- Typography
-- Responsive layout behavior
-
-See `TEMPLATE_GUIDE.md` for step-by-step customization notes.
-
-## Private Materials
-
-The original private materials are not stored as plain files in this repository.
-
-They are stored only as an encrypted archive:
+If the website returns 404, enable GitHub Pages in the repository:
 
 ```text
-encrypted-materials/personal-materials.zip.aes
+Settings -> Pages -> Build and deployment
+Source: Deploy from a branch
+Branch: main
+Folder: /root
+Save
 ```
 
-See `PRIVATE_MATERIALS.md` for decryption instructions.
-
-The archive password is intentionally not written into the repository.
+Deployment usually takes 1-3 minutes.
